@@ -1,0 +1,4 @@
+/**
+ * Application navigator
+ */
+export default {};

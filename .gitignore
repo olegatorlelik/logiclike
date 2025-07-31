@@ -1,80 +1,76 @@
-# Node modules
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# macOS system files
+# OSX
+#
 .DS_Store
 
-# Linux
-*.swp
-
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# React Native bundler/Metro
-.expo/
-.expo-shared/
-metro-cache/
-react-native-packager-cache-*
-react-native-codegen/
-tmp/
-
-# iOS build artifacts
-ios/build/
-ios/Pods/
-ios/Podfile.lock
-ios/*.xcodeproj/project.xcworkspace/
-ios/*.xcworkspace/
-ios/DerivedData/
-*.xcuserstate
-
-# Android build artifacts
-android/.gradle/
-android/app/build/
-android/build/
-android/local.properties
-android/gradle.properties
-android/captures/
-
-# Gradle files
-.gradle/
+# Xcode
+#
 build/
-*.iml
-.idea/
-*.hprof
-
-# IDE config
-.idea/
-*.sublime-workspace
-*.sublime-project
-.vscode/
-
-# Log files
-*.log
-
-# Test & coverage
-coverage/
-jest-cache/
-*.lcov
-
-# Fastlane
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
-
-# Misc
-.env
-.env.*
-*.keystore
-*.jks
-*.p12
-
-# macOS specific
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
 *.xcuserstate
+**/.xcode.env.local
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Bundle artifact
+*.jsbundle
+
+# Ruby / CocoaPods
+**/Pods/
+/vendor/bundle/
+
+# Temporary files created by Metro to check the health of the file watcher
+.metro-health-check*
+
+# testing
+/coverage
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+.env.local

@@ -1,0 +1,4 @@
+/**
+ * Auth navigator
+ */
+export default {};

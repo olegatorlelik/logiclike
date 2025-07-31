@@ -1,9 +1,15 @@
+import {Navigation} from 'react-native-navigation';
+import Start from './src/navigation/start';
+
 /**
- * @format
+ * Need to resolve rnn launch issue
  */
+if (typeof setImmediate === 'undefined') {
+  global.setImmediate = (fn, ...args) => {
+    return setTimeout(() => fn(...args), 0);
+  };
+}
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
-
-AppRegistry.registerComponent(appName, () => App);
+Navigation.events().registerAppLaunchedListener(async () => {
+  return Start();
+});

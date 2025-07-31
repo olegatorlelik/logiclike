@@ -3,15 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "logiclike/node_modules/.bin/react-native run-android",
-    "ios": "logiclike/node_modules/.bin/react-native run-ios",
-    "lint": "logiclike/node_modules/.bin/eslint .",
-    "start": "logiclike/node_modules/.bin/react-native start",
-    "test": "logiclike/node_modules/.bin/jest"
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "eslint .",
+    "start": "react-native start",
+    "test": "jest"
   },
   "dependencies": {
     "react": "18.3.1",
-    "react-native": "0.77.0"
+    "react-native": "0.77.0",
+    "react-native-navigation": "^8.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -27,6 +28,7 @@
     "@types/jest": "^29.5.13",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
+    "babel-plugin-module-resolver": "^5.0.2",
     "eslint": "^8.19.0",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
